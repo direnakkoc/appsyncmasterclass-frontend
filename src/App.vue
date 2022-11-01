@@ -1,10 +1,10 @@
 <template>
   <div id="app">
     <amplify-authenticator usernameAlias="email">
-      <amplify-sign-up
-        slot="sign-up"
+      <amplify-sign-in
+        slot="sign-in"
         :form-fields.prop="signUpFields"
-      ></amplify-sign-up>
+      ></amplify-sign-in>
       <div>
         <h1 v-if="user && user.attributes">Hey, {{user.attributes.name}}!</h1>
         <amplify-sign-out/>
